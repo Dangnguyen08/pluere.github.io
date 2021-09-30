@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluère - Kết quả phỏng vấn</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="image/logo1.jpeg" alt="" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">Truyền Thông</a></li>
+                    <li><a href="">Nội Dung</a></li>
+                    <li><a href="">Broadcast</a></li>
+                    <li><a href="">Hậu Cần</a></li>
+                    <li><a href="">Nhân Sự</a></li>
+                    <li><a href="">Design</a></li>
+                    <li><a href="">Media</a></li>
+                    <li><a href="">Tài chính</a></li>
+                </ul>
+            </nav>
+            <img src="image/menu.png" alt="" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>Congratulations!</h2>
+                <h3>Welcome to Pluère Project</h3>
+                <form method="get" action="">
+                    <button type="submit">Download Your Letter!</button>
+                 </form>
+            </div>
+            <div class="col-2">
+                <img src="./image/mascot.png" alt="" class="controller">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px"
+                }
+            else{
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
